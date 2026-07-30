@@ -28,10 +28,10 @@ Usuario → Pregunta → Embeddings → Búsqueda semántica (pgvector) → Cont
 | Característica | Detalle |
 |---|---|
 | **Modelos múltiples** | Groq (Llama 3.1, Llama 3.3, GPT-OSS), OpenAI (GPT-4o-mini), Gemini 1.5 Flash, Claude 3 Haiku |
-| **Embeddings gratis** | Gemini embedding-001 (3072 dimensiones) |
+| **Embeddings** | Gemini embedding-001 (gratis, 3072 dim) por defecto, OpenAI text-embedding-3-small como alternativa |
 | **Vector DB** | Supabase + pgvector |
 | **Formatos soportados** | PDF, TXT, MD, CSV |
-| **Rate limiting** | 10 preguntas/día en demo, ilimitado en plan completo |
+| **Rate limiting** | 10 preguntas/día en demo, desde 500/mes en plan completo |
 | **Persistencia** | Historial de conversaciones guardado en Supabase |
 | **API REST** | Documentación interactiva con Swagger |
 | **Frontend** | Dashboard, Chat con sidebar, Gestión de documentos |
@@ -44,7 +44,7 @@ Usuario → Pregunta → Embeddings → Búsqueda semántica (pgvector) → Cont
 ### Backend
 - **Python** + **FastAPI**
 - **Supabase** + **pgvector** (base de datos vectorial)
-- **Gemini API** (embeddings)
+- **Gemini API** (embeddings gratis) / **OpenAI** (embeddings alternativo)
 - **Groq / OpenAI / Gemini / Claude** (LLMs)
 - **Docker** (contenedorizado)
 
@@ -78,9 +78,10 @@ Pruébalo ahora mismo sin registro:
 | Plan | Precio | Ideal para |
 |---|---|---|
 | **Demo** | Gratis | Probar el producto |
-| **Starter** | Consultar | Pequeñas empresas |
-| **Business** | Consultar | Equipos de soporte |
-| **Enterprise** | Consultar | Grandes volúmenes |
+| **Implementación** | Desde $3,999 | Configuración completa + personalización |
+| **Starter** | $199/mes | Hasta 3 agentes, 500 preguntas/mes |
+| **Business** | $399/mes | Agentes ilimitados, preguntas ilimitadas |
+| **Enterprise** | $799/mes | White-label, SLA, soporte prioritario |
 
 Incluye implementación, personalización y soporte técnico.
 
