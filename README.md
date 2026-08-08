@@ -31,7 +31,7 @@ Usuario → Pregunta → Embeddings → Búsqueda semántica (pgvector) → Cont
 | **Embeddings** | Gemini embedding-001 (gratis, 3072 dim) por defecto, OpenAI text-embedding-3-small como alternativa |
 | **Vector DB** | Supabase + pgvector |
 | **Formatos soportados** | PDF, TXT, MD, CSV |
-| **Rate limiting** | 10 preguntas/día en demo, desde 500/mes en plan completo |
+| **Rate limiting** | 10 preguntas/día en demo, 500/día en el plan completo |
 | **Persistencia** | Historial de conversaciones guardado en Supabase |
 | **API REST** | Documentación interactiva con Swagger |
 | **Frontend** | Dashboard, Chat con sidebar, Gestión de documentos |
@@ -69,7 +69,21 @@ Pruébalo ahora mismo sin registro:
 
 ## 📸 Capturas de pantalla
 
-> *Próximamente — agrega tus capturas en la carpeta `assets/screenshots/`*
+### Widget en tu web
+
+![Widget de CustomerAgent integrado en una web](assets/screenshots/widget-cerrado.png)
+
+![Conversación del widget respondiendo con fuentes](assets/screenshots/widget-abierto.png)
+
+### Panel de administración
+
+![Dashboard de CustomerAgent respondiendo con citas a documentos](assets/screenshots/panel-chat-respuesta.png)
+
+![Gestión de documentos](assets/screenshots/panel-documentos.png)
+
+![Métricas de uso y feedback](assets/screenshots/panel-metricas.png)
+
+![Inicio de sesión del panel](assets/screenshots/home.png)
 
 ---
 
@@ -78,12 +92,10 @@ Pruébalo ahora mismo sin registro:
 | Plan | Precio | Ideal para |
 |---|---|---|
 | **Demo** | Gratis | Probar el producto |
-| **Implementación** | Desde $3,999 | Configuración completa + personalización |
-| **Starter** | $199/mes | Hasta 3 agentes, 500 preguntas/mes |
-| **Business** | $399/mes | Agentes ilimitados, preguntas ilimitadas |
-| **Enterprise** | $799/mes | White-label, SLA, soporte prioritario |
+| **Membresía SaaS** | S/ 499 implementación + S/ 149/mes (≈ $135 USD + $40 USD/mes) | Usar el asistente sin preocuparte por la infraestructura |
+| **Código completo** | USD 4,999 (pago único) | Desplegar en tu propia infraestructura con tus propias API keys |
 
-Incluye implementación, personalización y soporte técnico.
+La membresía incluye implementación del widget en tu web, alojamiento, acceso a todos los modelos de IA, hasta 500 preguntas/día, actualizaciones y soporte técnico continuo. Sin permanencia: pausa o cancela cuando quieras.
 
 ---
 
